@@ -1,0 +1,40 @@
+query GetUsers($skip: Int!, $limit: Int) {
+    users(skip: $skip, limit: $limit) {
+        count
+        nodes {
+            id
+            name
+            email
+        }
+    }
+}
+
+mutation DeleteUser($id: ID!) {
+    deleteUser(id: $id) {
+        id
+    }
+}
+
+mutation CreateUser($name: String!, $email: Email!) {
+    createUser(input: { name: $name, email: $email }) {
+        id
+        name
+        email
+    }
+}
+
+mutation UpdateUserName($id: ID!, $name: String!) {
+    updateUser(id: $id, input: { name: $name }) {
+        id
+        name
+        email
+    }
+}
+
+mutation UpdateUserEmail($id: ID!, $email: Email!) {
+    updateUser(id: $id, input: { email: $email }) {
+        id
+        name
+        email
+    }
+}

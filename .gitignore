@@ -1,0 +1,6 @@
+.vscode
+node_modules
+*.generated.ts
+*.generated.tsx
+frontend/dist
+server/dist

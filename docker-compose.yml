@@ -1,0 +1,29 @@
+version: "3.2"
+services:
+  db:
+    image: mongodb:latest
+    container_name: demo-app_db
+    networks:
+      - demo-app-net
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      cache_from:
+        - alpine:latest
+    container_name: demo-app_server
+    environment:
+      - DB_HOST=db
+    depends_on:
+      - db
+    networks:
+      - demo-app-net
+    ports:
+      - target: 80
+        published: 8080
+        protocol: tcp
+        mode: host
+
+networks:
+  demo-app-net:
