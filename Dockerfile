@@ -5,10 +5,11 @@ WORKDIR /usr/src/app
 RUN mkdir static
 ADD package.json /usr/src/app
 ADD package-lock.json /usr/src/app
+ADD docker-entrypoint.sh /usr/src/app
 ADD server/dist /usr/src/app/
 ADD frontend/dist /usr/src/app/static/
 
-RUN apk add -U nodejs \
+RUN apk add -U nodejs npm \
     && npm install --production \
     && npm dedupe \
     && rm /var/cache/apk/* \
