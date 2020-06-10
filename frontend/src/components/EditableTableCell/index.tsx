@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { TableCell, Input } from '@material-ui/core';
-import { Maybe } from '../../../../common/utils/misc';
+import { Maybe } from '../../utils/misc';
 
 export interface Props {
     text: string,
