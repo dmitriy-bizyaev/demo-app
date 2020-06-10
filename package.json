@@ -2,6 +2,10 @@
     "name": "demo-app",
     "version": "1.0.0",
     "description": "Demo application made with TypeScript, MongoDB, GraphQL, React, Apollo and Material UI",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dmitriy-bizyaev/demo-app.git"
+    },
     "main": "server/src/index.ts",
     "scripts": {
         "graphql-codegen": "graphql-codegen --config graphql-codegen.yml",
