@@ -3,7 +3,6 @@ Demo application built with TypeScript, MongoDB, GraphQL, React, Apollo and Mate
 ### Installation
 1. Clone the repo
 2. Run `npm install`
-3. Run `npm run graphql-codegen`
 ### Running
 1. Make sure MongoDB is up and running
 2. Run the backend with `npm run start`
