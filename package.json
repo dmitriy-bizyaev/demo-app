@@ -8,6 +8,7 @@
     },
     "main": "server/src/index.ts",
     "scripts": {
+        "postinstall": "npm run graphql-codegen",
         "graphql-codegen": "graphql-codegen --config graphql-codegen.yml",
         "start": "ts-node server/src",
         "start-dev-server": "webpack-dev-server --config frontend/webpack.config.js",
