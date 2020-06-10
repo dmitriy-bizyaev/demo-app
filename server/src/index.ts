@@ -3,7 +3,7 @@ import { HttpTerminator, createHttpTerminator } from 'http-terminator';
 import config from './config';
 import app from './app';
 import * as db from './db';
-import { Maybe } from '../../common/utils/misc';
+import { Maybe } from './utils/misc';
 
 let server: Maybe<Server> = null;
 let terminator: Maybe<HttpTerminator> = null;
