@@ -12,7 +12,7 @@
         "start": "ts-node server/src",
         "start-dev-server": "webpack-dev-server --config frontend/webpack.config.js",
         "build-frontend": "webpack --config frontend/webpack.config.js",
-        "build-server": "tsc --build server/tsconfig.json && copyfiles -u 3 \"server/src/configs/*.json\" \"server/dist/configs\"",
+        "build-server": "tsc --build server/tsconfig.json && copyfiles -u 3 \"server/src/configs/*.json\" \"server/dist/configs\" && copyfiles -u 3 \"server/src/graphql/schema.graphql\" \"server/dist/graphql\"",
         "build": "npm run graphql-codegen && npm run build-server && npm run build-frontend",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
