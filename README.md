@@ -10,6 +10,6 @@ Demo application built with TypeScript, MongoDB, GraphQL, React, Apollo and Mate
 4. Dev server will be listening on port 8080
 ### Running with docker-compose
 1. Make sure you have Docker and docker-compose installed
-2. Run `NODE_ENV=development|production npm build`
+2. Run `NODE_ENV=development|production npm run build`
 3. Run `docker-compose up -d`
 4. The application will be listeninig on port 8080
