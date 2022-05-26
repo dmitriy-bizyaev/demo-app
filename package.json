@@ -24,7 +24,7 @@
     },
     "dependencies": {
         "apollo-server-express": "^2.14.3",
-        "convict": "^6.0.0",
+        "convict": "^6.2.3",
         "express": "^4.17.1",
         "graphql": "^14.6.0",
         "http-terminator": "^2.0.3",
